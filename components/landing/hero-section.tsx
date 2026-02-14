@@ -1,6 +1,7 @@
 "use client";
 
 import { ArrowRight, Play } from "lucide-react";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -10,7 +11,7 @@ const HeroSection = () => {
         <div className="flex justify-center">
           <span className="border border-primary/50 bg-primary/20 text-primary px-4 py-1 text-xs tracking-wider font-medium flex items-center gap-2">
             <div className="w-2 h-2 bg-primary"></div>
-            V2.0 NOW AVAILABLE
+            V1.0 NOW AVAILABLE
           </span>
         </div>
 
@@ -33,10 +34,10 @@ const HeroSection = () => {
 
         {/* Buttons */}
         <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
-          <button className="bg-primary text-primary-foreground px-8 py-3 font-medium flex items-center justify-center gap-2 hover:bg-primary/85 transition-colors cursor-pointer w-fit mx-auto">
+          <Link href="/learn" className="bg-primary text-primary-foreground px-8 py-3 font-medium flex items-center justify-center gap-2 hover:bg-primary/85 transition-colors cursor-pointer w-fit mx-auto">
             Start Learning
             <ArrowRight size={18} />
-          </button>
+          </Link>
         </div>
       </div>
     </section>

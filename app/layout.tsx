@@ -18,6 +18,8 @@ export const metadata: Metadata = {
   description: "Your all in one markdown verse for everything",
 };
 
+import Footer from "@/components/landing/footer";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -26,10 +28,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased font-sans`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased font-sans flex flex-col min-h-screen`}
       >
-        <Navbar/>
-        {children}
+        <Navbar />
+        <main className="pt-16">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );

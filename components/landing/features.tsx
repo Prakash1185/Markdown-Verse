@@ -1,6 +1,7 @@
 "use client";
 
 import { ArrowRight, BookOpen, Code2 } from "lucide-react";
+import Link from "next/link";
 
 const FeaturesSection = () => {
     return (
@@ -35,10 +36,10 @@ const FeaturesSection = () => {
                             organized in a clear, step-by-step learning path.
                         </p>
 
-                        <button className="mt-auto w-fit bg-primary text-primary-foreground px-6 py-2.5 text-sm font-medium flex items-center gap-2 hover:bg-primary/85 transition-colors duration-200 cursor-pointer">
+                        <Link href="/learn" className="mt-auto w-fit bg-primary text-primary-foreground px-6 py-2.5 text-sm font-medium flex items-center gap-2 hover:bg-primary/85 transition-colors duration-200 cursor-pointer">
                             Learn Now
                             <ArrowRight size={16} />
-                        </button>
+                        </Link>
                     </div>
 
                     {/* Feature 2 — Practice */}
@@ -57,10 +58,10 @@ const FeaturesSection = () => {
                             truly master Markdown is by doing.
                         </p>
 
-                        <button className="mt-auto w-fit bg-primary text-primary-foreground px-6 py-2.5 text-sm font-medium flex items-center gap-2 hover:bg-primary/85 transition-colors duration-200 cursor-pointer">
+                        <Link href="/playground" className="mt-auto w-fit bg-primary text-primary-foreground px-6 py-2.5 text-sm font-medium flex items-center gap-2 hover:bg-primary/85 transition-colors duration-200 cursor-pointer">
                             Try Now
                             <ArrowRight size={16} />
-                        </button>
+                        </Link>
                     </div>
 
                 </div>
