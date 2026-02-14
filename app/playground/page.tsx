@@ -5,6 +5,7 @@ import { RotateCcw, Trash2, ArrowLeft } from "lucide-react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import Link from "next/link";
+import rehypeRaw from "rehype-raw";
 
 const defaultPlaygroundCode = `# Welcome to the Playground! 🎮
 
@@ -49,7 +50,7 @@ export default function PlaygroundPage() {
     const [code, setCode] = useState(defaultPlaygroundCode);
 
     return (
-        <div className="min-h-[calc(100vh-4rem)] flex flex-col">
+        <div className="min-h-[calc(100vh-4rem)] flex flex-col max-w-7xl mx-auto border-l border-r">
             {/* Toolbar */}
             <div className="flex items-center justify-between px-4 py-2 border-b border-foreground/10 bg-card/50 flex-shrink-0">
                 <div className="flex items-center gap-3">
@@ -105,7 +106,7 @@ export default function PlaygroundPage() {
                         Live Preview
                     </div>
                     <div className="flex-1 p-6 overflow-y-auto prose-markdown prose-light bg-white min-h-[200px] md:min-h-0">
-                        <ReactMarkdown remarkPlugins={[remarkGfm]}>{code}</ReactMarkdown>
+                        <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>{code}</ReactMarkdown>
                     </div>
                 </div>
             </div>

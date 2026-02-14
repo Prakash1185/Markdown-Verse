@@ -2,26 +2,41 @@
 
 import { ArrowRight, BookOpen, Code2 } from "lucide-react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const FeaturesSection = () => {
+    const fadeIn = {
+        initial: { opacity: 0, scale: 0.98 },
+        whileInView: { opacity: 1, scale: 1 },
+        viewport: { once: true },
+        transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] as const }
+    };
+
     return (
         <section className="px-4 sm:px-6 lg:px-8 pt-28 pb-16">
             <div className="max-w-7xl mx-auto">
 
                 {/* Dotted Divider with Text */}
-                <div className="flex items-center gap-4 mb-14">
+                <motion.div
+                    className="flex items-center gap-4 mb-14"
+                    {...fadeIn}
+                >
                     <div className="flex-1 border-t-2 border-dashed border-foreground/15"></div>
                     <span className="text-xs tracking-[0.3em] uppercase text-muted-foreground font-medium">
                         What We Offer
                     </span>
                     <div className="flex-1 border-t-2 border-dashed border-foreground/15"></div>
-                </div>
+                </motion.div>
 
                 {/* 2-Column Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
                     {/* Feature 1 — Learning */}
-                    <div className="border border-foreground/10 bg-card p-8 sm:p-10 flex flex-col gap-6 group hover:border-primary/40 transition-colors duration-300">
+                    <motion.div
+                        className="border border-foreground/10 bg-card p-8 sm:p-10 flex flex-col gap-6 group hover:border-primary/40 transition-colors duration-300"
+                        {...fadeIn}
+                        transition={{ ...fadeIn.transition, delay: 0.1 }}
+                    >
                         <div className="w-12 h-12 border border-primary/40 bg-primary/10 flex items-center justify-center">
                             <BookOpen size={22} className="text-primary" />
                         </div>
@@ -40,10 +55,14 @@ const FeaturesSection = () => {
                             Learn Now
                             <ArrowRight size={16} />
                         </Link>
-                    </div>
+                    </motion.div>
 
                     {/* Feature 2 — Practice */}
-                    <div className="border border-foreground/10 bg-card p-8 sm:p-10 flex flex-col gap-6 group hover:border-primary/40 transition-colors duration-300">
+                    <motion.div
+                        className="border border-foreground/10 bg-card p-8 sm:p-10 flex flex-col gap-6 group hover:border-primary/40 transition-colors duration-300"
+                        {...fadeIn}
+                        transition={{ ...fadeIn.transition, delay: 0.2 }}
+                    >
                         <div className="w-12 h-12 border border-primary/40 bg-primary/10 flex items-center justify-center">
                             <Code2 size={22} className="text-primary" />
                         </div>
@@ -62,7 +81,7 @@ const FeaturesSection = () => {
                             Try Now
                             <ArrowRight size={16} />
                         </Link>
-                    </div>
+                    </motion.div>
 
                 </div>
             </div>

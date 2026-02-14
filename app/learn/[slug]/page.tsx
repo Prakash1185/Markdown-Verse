@@ -4,6 +4,7 @@ import { use } from "react";
 import { notFound } from "next/navigation";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import rehypeRaw from "rehype-raw";
 import {
     getLessonBySlug,
     getAdjacentLessons,
@@ -58,7 +59,7 @@ export default function LessonPage({
 
             {/* Lesson Content */}
             <article className="prose-markdown">
-                <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>
                     {lesson.content}
                 </ReactMarkdown>
             </article>
