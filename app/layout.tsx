@@ -19,6 +19,7 @@ export const metadata: Metadata = {
 };
 
 import Footer from "@/components/landing/footer";
+import { Analytics } from "@vercel/analytics/next";
 
 export default function RootLayout({
   children,
@@ -35,6 +36,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );

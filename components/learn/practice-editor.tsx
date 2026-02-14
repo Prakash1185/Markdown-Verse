@@ -4,6 +4,7 @@ import { useState } from "react";
 import { RotateCcw } from "lucide-react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import rehypeRaw from "rehype-raw";
 
 interface PracticeEditorProps {
     instructions: string;
@@ -59,7 +60,7 @@ const PracticeEditor = ({ instructions, defaultCode }: PracticeEditorProps) => {
                         Live Preview
                     </div>
                     <div className="p-4 h-64 overflow-y-auto prose-markdown prose-light bg-white">
-                        <ReactMarkdown remarkPlugins={[remarkGfm]}>{code}</ReactMarkdown>
+                        <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>{code}</ReactMarkdown>
                     </div>
                 </div>
             </div>

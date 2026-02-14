@@ -114,7 +114,7 @@ Try **bold** and *italic* here.
 
 ---
 
-Visit [MarkdownVerse](https://markdownverse.com) to learn more.
+Visit [MarkdownVerse](https://markdownverse.vercel.app) to learn more.
 `,
             },
         ],
@@ -444,10 +444,9 @@ You can add paragraphs, blockquotes, or code inside list items by indenting:
 - Pizza
   - Margherita
   - Pepperoni
-- Sushi
-- Tacos
-  - Chicken
-  - Beef
+- another
+- again something
+  - Something
 `,
             },
             {
@@ -672,7 +671,7 @@ Check out [MDN](https://developer.mozilla.org "Mozilla Developer Network")
 ## Reference Link
 Read the [documentation][docs] for more info.
 
-[docs]: https://markdownverse.com
+[docs]: https://markdownverse.vercel.app
 `,
             },
             {
@@ -744,7 +743,7 @@ Wrap an image in a link to make it clickable:
 ![Placeholder](https://via.placeholder.com/400x200)
 
 ## Linked Image
-[![Click me](https://via.placeholder.com/200x100)](https://markdownverse.com)
+[![Click me](https://via.placeholder.com/200x100)](https://markdownverse.vercel.app)
 `,
             },
         ],
