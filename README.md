@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MarkdownVerse
 
-## Getting Started
+<div align="center">
+  <img src="/public/home.png" alt="MarkdownVerse" width="100%" />
+</div>
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Overview (V1.0)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Markdown-Verse** is a modern, interactive playground designed to help you master Markdown with zero friction. Whether you're a developer, technical writer, or a student, our goal is to make the learning curve as flat as possible through hands-on experience.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+In this first version, we focus on the core fundamentals of Markdown formatting with a premium, sleek interface that responds to your input in real-time.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Learn Page
+---
+<div align="center">
+  <img src="/public/learn.png" alt="MarkdownVerse" width="100%" />
+</div>
 
-## Learn More
+Playground
+---
+<div align="center">
+  <img src="/public/playground.png" alt="MarkdownVerse" width="100%" />
+</div>
 
-To learn more about Next.js, take a look at the following resources:
+## Key Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Live Preview:** See your formatting update instantly as you type. No more guessing how your document will look.
+- **Guided Practice:** Learn by doing with structured exercises.
+- **Modern UI:** Built with Framer Motion for smooth, premium animations and a glassmorphic aesthetic.
+- **Fast & Lightweight:** Powered by Next.js and Tailwind CSS for a seamless user experience.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Tech Stack
 
-## Deploy on Vercel
+- **Framework:** [Next.js](https://nextjs.org/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/) and [Shadcn UI](https://ui.shadcn.com/)
+- **Animations:** [Framer Motion](https://www.framer.com/motion/)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Contributing
+Contributions are always welcome!
