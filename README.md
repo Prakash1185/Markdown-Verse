@@ -6,7 +6,7 @@
 
 ---
 
-## 🚀 Overview (V1.0)
+## Overview (V1.0)
 
 **Markdown-Verse** is a modern, interactive playground designed to help you master Markdown with zero friction. Whether you're a developer, technical writer, or a student, our goal is to make the learning curve as flat as possible through hands-on experience.
 
