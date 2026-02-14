@@ -28,9 +28,9 @@ const Navbar = () => {
             Playground
           </Link>
           <div className="flex items-center gap-3 ml-2">
-            <Link href="https://github.com/Prakash1185/Markdown-Verse" target="_blank" className="flex items-center justify-center border border-border bg-secondary-foreground text-primary-foreground px-3 py-2 text-sm font-medium rounded-md hover:bg-secondary-foreground/80 transition-colors">
+            {/* <Link href="https://github.com/Prakash1185/Markdown-Verse" target="_blank" className="flex items-center justify-center border border-border bg-secondary-foreground text-primary-foreground px-3 py-2 text-sm font-medium rounded-md hover:bg-secondary-foreground/80 transition-colors">
               <GithubIcon size={18} />
-            </Link>
+            </Link> */}
             <Link href="/learn" className="bg-primary text-primary-foreground px-6 py-2 text-sm font-medium rounded-md hover:bg-primary/85 transition-colors">
               Get Started
             </Link>
@@ -39,9 +39,9 @@ const Navbar = () => {
 
         {/* Mobile Nav Toggle */}
         <div className="sm:hidden flex items-center gap-3">
-          <Link href="https://github.com/Prakash1185/Markdown-Verse" target="_blank" className="p-2 border border-border rounded-md text-muted-foreground">
+          {/* <Link href="https://github.com/Prakash1185/Markdown-Verse" target="_blank" className="p-2 border border-border rounded-md text-muted-foreground">
             <GithubIcon size={18} />
-          </Link>
+          </Link> */}
           <Sheet>
             <SheetTrigger asChild>
               <button className="flex items-center justify-center p-2 rounded-md border border-foreground/20 hover:bg-muted transition-colors">
