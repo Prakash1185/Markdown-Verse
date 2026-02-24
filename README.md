@@ -43,6 +43,9 @@ An interactive sandbox where you can experiment freely with live Markdown render
 ## Blog Editor (New in V2.0)
 
 A full-featured rich text editor that converts your content into Markdown in real-time.
+<div align="center">
+  <img src="/public/editor.png" alt="Editor" width="100%" />
+</div>
 
 ### What It Includes
 
@@ -84,5 +87,3 @@ A full-featured rich text editor that converts your content into Markdown in rea
 # Contributing
 
 Contributions are always welcome!
-
-If you'd like to improve the editor, add new Markdown lessons, optimize performance, or enhance the UI — feel free to open an issue or submit a pull request.
