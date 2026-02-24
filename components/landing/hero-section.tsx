@@ -2,7 +2,7 @@
 
 import { motion, Variants } from "framer-motion";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, EditIcon } from "lucide-react";
 
 const HeroSection = () => {
   const containerVariants: Variants = {
@@ -61,15 +61,20 @@ const HeroSection = () => {
         variants={containerVariants}
       >
         {/* Badge */}
-        <motion.div variants={blurRevealVariants} className="flex justify-center">
-          <span className="border border-primary/50 bg-primary/20 text-primary px-4 py-1 text-xs tracking-wider font-medium flex items-center gap-2">
-            <div className="w-2 h-2 bg-primary"></div>
-            V1.0 NOW AVAILABLE
+        <motion.div variants={blurRevealVariants} className="flex justify-center flex-col items-center gap-3.5">
+           <span className="border border-primary/50 bg-primary/20 text-primary px-4 py-1 text-xs tracking-wider font-medium flex items-center gap-2 capitalize">
+           {/* <EditIcon className="w-3 h-3"/> */}
+            V2.0 Live : Try the all new editor
           </span>
+          {/* <span className="border border-primary/50 bg-primary/20 text-primary px-4 py-1 text-xs tracking-wider font-medium flex items-center gap-2">
+            <div className="w-2 h-2 bg-primary"></div>
+            V2.0 NOW AVAILABLE
+          </span> */}
         </motion.div>
+        
 
         {/* Headings */}
-        <div className="mt-10">
+        <div className="mt-6">
           <motion.h1
             variants={wordContainerVariants}
             className="font-semibold leading-[1.05] text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl tracking-tighter"
@@ -94,10 +99,13 @@ const HeroSection = () => {
         </motion.p>
 
         {/* Buttons */}
-        <motion.div variants={blurRevealVariants} className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
-          <Link href="/learn" className="bg-primary text-primary-foreground px-8 py-3 font-medium flex items-center justify-center gap-2 hover:bg-primary/85 transition-colors cursor-pointer w-fit mx-auto">
+        <motion.div variants={blurRevealVariants} className="mt-10 flex flex-col sm:flex-row justify-center  items-center gap-4">
+          <Link href="/learn" className="bg-primary text-primary-foreground px-8 py-3 font-medium flex items-center justify-center gap-2 hover:bg-primary/85 transition-colors cursor-pointer w-fit ">
             Start Learning
             <ArrowRight size={18} />
+          </Link>
+          <Link href="/editor" className="bg-primary text-primary-foreground px-8 py-3 font-medium flex items-center justify-center gap-2 hover:bg-primary/85 transition-colors cursor-pointer w-fit ">
+            Explore Editor
           </Link>
         </motion.div>
       </motion.div>
