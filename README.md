@@ -1,41 +1,88 @@
 # MarkdownVerse
 
 <div align="center">
-  <img src="/public/home.png" alt="MarkdownVerse" width="100%" />
+  <img src="/public/home2.png" alt="MarkdownVerse" width="100%" />
 </div>
 
+
+# Overview (V2.0)
+
+**MarkdownVerse** is a modern, interactive Markdown learning and publishing platform designed to eliminate friction between writing and formatting.
+
+Whether you're a developer, technical writer, blogger, or student, MarkdownVerse helps you:
+
+- Learn Markdown  
+- Practice Markdown  
+- Write blog content visually  
+- Instantly convert rich text to clean Markdown  
+- Preview and export production-ready `.md` files  
+
+V2.0 introduces a complete **Rich Blog Editor** with real-time Markdown conversion and side-by-side preview — turning MarkdownVerse into both a learning tool and a lightweight publishing engine.
+
 ---
 
-## Overview (V1.0)
+## Learn Page
+Structured lessons with step-by-step progression to master Markdown fundamentals.
 
-**Markdown-Verse** is a modern, interactive playground designed to help you master Markdown with zero friction. Whether you're a developer, technical writer, or a student, our goal is to make the learning curve as flat as possible through hands-on experience.
-
-In this first version, we focus on the core fundamentals of Markdown formatting with a premium, sleek interface that responds to your input in real-time.
-
-Learn Page
----
 <div align="center">
-  <img src="/public/learn.png" alt="MarkdownVerse" width="100%" />
+  <img src="/public/learn.png" alt="Learn Page" width="100%" />
 </div>
 
-Playground
+
 ---
+
+## Playground
+An interactive sandbox where you can experiment freely with live Markdown rendering.
+
 <div align="center">
-  <img src="/public/playground.png" alt="MarkdownVerse" width="100%" />
+  <img src="/public/playground.png" alt="Playground" width="100%" />
 </div>
 
-## Key Features
+---
 
-- **Live Preview:** See your formatting update instantly as you type. No more guessing how your document will look.
-- **Guided Practice:** Learn by doing with structured exercises.
-- **Modern UI:** Built with Framer Motion for smooth, premium animations and a glassmorphic aesthetic.
-- **Fast & Lightweight:** Powered by Next.js and Tailwind CSS for a seamless user experience.
+## Blog Editor (New in V2.0)
 
-## Tech Stack
+A full-featured rich text editor that converts your content into Markdown in real-time.
 
-- **Framework:** [Next.js](https://nextjs.org/)
-- **Styling:** [Tailwind CSS](https://tailwindcss.com/) and [Shadcn UI](https://ui.shadcn.com/)
-- **Animations:** [Framer Motion](https://www.framer.com/motion/)
+### What It Includes
 
-## Contributing
+- Complete Rich Text Editor:
+  - Bold, Italic, Underline, Strike  
+  - Headings (H1, H2, H3)  
+  - Bullet & Ordered Lists  
+  - Blockquotes  
+  - Inline Code & Code Blocks  
+  - Text Alignment  
+  - Undo / Redo  
+  - One-click `.md` download  
+
+---
+
+# Key Features
+
+- **Live Preview:** See formatting updates instantly.  
+- **Guided Learning Path:** Structured lessons for beginners to advanced users.  
+- **Rich Text to Markdown Conversion:** Write visually, export clean Markdown.  
+- **Side-by-Side Editing Experience:** Seamless writing and preview workflow.  
+- **Downloadable Markdown Files:** Export ready-to-publish `.md` files.  
+- **Modern UI System:** Border-based, clean SaaS design with subtle motion.  
+- **Fast & Lightweight:** Optimized with Next.js and Tailwind CSS.  
+
+---
+
+# Tech Stack
+
+- **Framework:** [Next.js](https://nextjs.org/)  
+- **Editor Engine:** [TipTap](https://tiptap.dev/)  
+- **Markdown Conversion:** Turndown  
+- **Markdown Rendering:** React Markdown + remark-gfm  
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)  
+- **Animations:** [Framer Motion](https://www.framer.com/motion/)  
+
+---
+
+# Contributing
+
 Contributions are always welcome!
+
+If you'd like to improve the editor, add new Markdown lessons, optimize performance, or enhance the UI — feel free to open an issue or submit a pull request.
